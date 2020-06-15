@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <div>
+  <p>{{user.profile.name}}</p>
+  <p>{{user.userName}}</p>
+</div>
+  <span class="fill-remaining-space"></span>
+  <span *ngIf="authenticated" (click)="logout()">
+    <button mat-raised-button>Logout</button>
+  </span>
+</mat-toolbar>
